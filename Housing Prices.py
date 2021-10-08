@@ -49,6 +49,17 @@ df.describe(include='all')
 
 df.info()
 
+#Descriptive statistics for a single variable
 
+df['Sale Price'].mean()
+df['Sale Price'].min()
+df['Sale Price'].max()
+df['Sale Price'].std()
+#std deviation
 
+df['Sale Price'].quantile(.25)
+
+#unique  function
+#it is used for a string variable for finding out theunique values that exist for that variable in the data set
+df['Condition of the House'].unique()
 
