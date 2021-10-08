@@ -98,3 +98,23 @@ plt.title("My first graph")
 plt.xlabel("Record Number")
 plt.ylabel("Sale Price")
 plt.show()
+
+
+#In order to modify the graphs
+plt.plot(df['Sale Price'],marker='o',markerfacecolor='Blue',markersize=5,color='yellow',linewidth=5,linestyle='dashed')
+
+#PIE CHART
+df.groupby('Condition of the House')['ID'].count()
+#Based on output we define two variable value and labels
+values=(30,1701,14031,5679,172)
+labels=('Bad','Excellent','Fair','Good','Okay')
+plt.pie(values,labels=labels)
+
+#Bar Graph
+plt.bar(labels,values,color='purple',linewidth=5,linestyle='dashed')
+plt.xlabel("Condition of the house")
+plt.ylabel("Count of the House")
+plt.title("CONDITION GRAPH")
+plt.show()
+
+
