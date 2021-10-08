@@ -40,7 +40,14 @@ df.tail(10)
 #to display last 10 rows of data set
 
 
-# In[ ]:
+# In[8]:
+
+df.describe()
+
+#include string and category variable
+df.describe(include='all')
+
+df.info()
 
 
 
