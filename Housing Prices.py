@@ -118,3 +118,27 @@ plt.title("CONDITION GRAPH")
 plt.show()
 
 
+#Scatter plot
+plt.scatter(x=df['Flat Area (in Sqft)'],y=df['Sale Price'],color='red')
+plt.xlabel("Area")
+plt.ylabel("Selling Price")
+plt.title("Selling Price vs Area")
+plt.show()
+
+plt.scatter(x=df['No of Bathrooms'],y = df['Sale Price'],color='red')
+plt.xlabel("No of Bathrooms")
+plt.ylabel("Selling Price")
+plt.title("Selling Price vs No of bathrooms")
+plt.show()
+
+#Histogram
+df.describe()
+plt.hist(df['Age of House (in Years)'],bins=10)
+plt.hist(df['Age of House (in Years)'],bins=10)
+plt.xlabel("Age of House (in Years)")
+plt.ylabel("No of Records")
+plt.title("Age wise distribution of Houses")
+plt.show()
+
+#BOX PLOT
+plt.boxplot(df['Age of House (in Years)'])
