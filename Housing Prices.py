@@ -63,3 +63,15 @@ df['Sale Price'].quantile(.25)
 #it is used for a string variable for finding out theunique values that exist for that variable in the data set
 df['Condition of the House'].unique()
 
+
+# Now we will use numpy to calculate the standard deviation
+
+import numpy as np
+
+np.std(df['Sale Price'])
+
+#There is diff in std deviation while calculating with different methods because the formula is different
+df['Sale Price'].std()-np.std(df['Sale Price'])
+
+#We can fix this By putting degree of freedom as 1
+np.std(df['Sale Price'],ddof=1)
