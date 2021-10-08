@@ -75,3 +75,26 @@ df['Sale Price'].std()-np.std(df['Sale Price'])
 
 #We can fix this By putting degree of freedom as 1
 np.std(df['Sale Price'],ddof=1)
+
+
+#Visualizing using graphs
+
+import matplotlib.pyplot as plt
+#line graph
+#Plt.plot(X and Y values)
+#x and y= Plt.plot(data_set_name[variable name])
+plt.plot(df['Sale Price'])
+
+#To label the data
+plt.xlabel("Record Number")
+plt.ylabel("Sale Price")
+
+#To colour the line
+plt.plot(df['Sale Price'],color='green')
+
+#complilation of all above codes for line graph
+plt.plot(df['Sale Price'],color='green')
+plt.title("My first graph")
+plt.xlabel("Record Number")
+plt.ylabel("Sale Price")
+plt.show()
