@@ -15,3 +15,25 @@ Bins divide the entire range(difference between minimum valur and maximum value)
 
 
 The Bar Chart displays the percentage where as the histogram displays frequency.
+
+
+#pandas.groupby()
+#pandas.pivot_table()
+
+Syntax of groupby():
+dataframe.groupby(["list of colums to be group by"])["Column to be grouped"].how_to_group()
+
+Limitations ofpandas.groupby():
+1) It cannot perform very complex aggregations.
+2) The formatting cannot be changes to suit our needs.
+
+#To remove these we have pandas.pivot_table();
+1)It can easily handle more complex operation.
+2)It provides better representation.
+
+
+
+
+
+
+
