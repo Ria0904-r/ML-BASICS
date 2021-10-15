@@ -142,3 +142,13 @@ plt.show()
 
 #BOX PLOT
 plt.boxplot(df['Age of House (in Years)'])
+
+
+#PANDAS
+
+#RELATION BETWEEN CONDITION OF THE HOUSE AND THE SALE PRICE
+
+#Calculate the mean of the "Sale price with respect to the condition of the house
+zip_condition_sale=df.groupby(['Condition of the House','Zipcode'])['Sale Price'].mean()  
+zip_condition_sale
+
